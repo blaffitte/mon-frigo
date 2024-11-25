@@ -1,2 +1,12 @@
-<Frame defaultPage="main-page">
-</Frame>
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="page">
+  <ActionBar title="Mon Frigo" class="action-bar"></ActionBar>
+  <TabView>
+    <TabViewItem title="Liste">
+      <Frame defaultPage="home/home-page.xml" />
+    </TabViewItem>
+    <TabViewItem title="Ajouter">
+      <Frame defaultPage="add/add-page.xml" />
+    </TabViewItem>
+  </TabView>
+</Page>

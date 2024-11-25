@@ -1,8 +1,0 @@
-<TabView>
-  <TabViewItem title="Accueil" iconSource="res://home">
-    <Frame defaultPage="home/home-page.xml" />
-  </TabViewItem>
-  <TabViewItem title="Ajouter" iconSource="res://add">
-    <Frame defaultPage="add/add-page.xml" />
-  </TabViewItem>
-</TabView>

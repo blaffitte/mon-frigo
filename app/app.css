@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Styles */
+/* Styles globaux */
 .page {
-    background-color: #f0f2f5; /* Couleur de fond légèrement grise */
-    padding: 16px;
-  }
-  
-  .action-bar {
-    background-color: #4267B2; /* Bleu Facebook */
-    color: #ffffff;
-    font-size: 20;
-    font-weight: bold;
-  }
-  
-  .filter-bar {
+  background-color: #f0f2f5;
+  padding: 16px;
+}
+
+.action-bar {
+  background-color: #4267B2;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.filter-bar {
     background-color: #ffffff;
     padding: 8px 16px;
     border-radius: 8px;
@@ -64,18 +64,18 @@
   }
   
   /* Floating Action Button (FAB) */
-  .fab-button {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    width: 56px;
-    height: 56px;
-    background-color: #4267B2;
-    border-radius: 28px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .fab-button Image {
+.fab-button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 56px;
+  height: 56px;
+  background-color: #4267B2;
+  border-radius: 28px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fab-button Image {
     width: 24px;
     height: 24px;
     margin: 16px;
@@ -83,12 +83,12 @@
   
   /* TabView */
   TabView {
-    background-color: #ffffff;
+  background-color: #ffffff;
   }
   
   TabViewItem {
     font-size: 14px;
-    color: #333333;
+  color: #333333;
   }
   
   TabViewItem[selected] {
@@ -101,11 +101,11 @@
     font-size: 14px;
     color: #ffffff;
     background-color: #4267B2;
-    border-radius: 8px;
-    padding: 10px 16px;
-  }
-  
-  Button[isDisabled] {
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+Button[isDisabled] {
     background-color: #b0b3b8;
   }
   
@@ -114,8 +114,8 @@
     background-color: #ffffff;
     padding: 12px;
     font-size: 14px;
+    color: #333333;
     border-radius: 8px;
     margin-bottom: 16px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
+}

@@ -1,0 +1,20 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+  <ActionBar title="Liste des aliments" class="action-bar"></ActionBar>
+  <StackLayout>
+    <ListView items="{{ aliments }}" class="card">
+      <ListView.itemTemplate>
+        <StackLayout>
+          <Label text="{{ name }}" />
+          <Label text="Quantité : {{ quantity }}" />
+          <Label text="Expiration : {{ expiration }}" />
+          <StackLayout class="card-actions">
+            <Button text="Modifier" tap="onEdit" />
+            <Button text="Supprimer" tap="onDelete" />
+          </StackLayout>
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    <Button text="Recharger la liste" tap="onLoadAliments" />
+  </StackLayout>
+</Page>

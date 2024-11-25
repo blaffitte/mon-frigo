@@ -1,0 +1,10 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+  <ActionBar title="Ajouter un aliment" class="action-bar"></ActionBar>
+  <StackLayout>
+    <TextField hint="Nom de l'aliment" text="{{ name }}" />
+    <TextField hint="Quantité" text="{{ quantity }}" keyboardType="number" />
+    <TextField hint="Date d'expiration" text="{{ expiration }}" />
+    <Button text="Ajouter" tap="onAddAliment" />
+  </StackLayout>
+</Page>

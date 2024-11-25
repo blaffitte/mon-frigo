@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.8.0"
+    "@nativescript/core": "~8.8.0",
+    "@nativescript/theme": "^3.0.0",
+    "nativescript-sqlite": "^2.8.6"
   },
   "devDependencies": {
     "@nativescript/preview-cli": "^1.0.14",
