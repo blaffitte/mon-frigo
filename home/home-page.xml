@@ -1,0 +1,21 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="page">
+  <ActionBar title="Liste des aliments" class="action-bar"></ActionBar>
+  <GridLayout rows="auto, *">
+    <StackLayout class="filter-bar" row="0">
+      <Button text="Tout" class="filter-button" />
+      <Button text="Bientôt expiré" class="filter-button" />
+    </StackLayout>
+    <ListView row="1">
+      <ListView.itemTemplate>
+        <GridLayout class="card" columns="auto, *">
+          <Image src="~/images/food.png" class="card-image" col="0" />
+          <StackLayout class="card-info" col="1">
+            <Label text="Aliment exemple" class="card-title" />
+            <Label text="Date d'expiration : 25/12/2024" class="card-subtitle" />
+          </StackLayout>
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>

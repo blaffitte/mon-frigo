@@ -1,9 +1,25 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-    <ActionBar title="My App" icon="" />
-
-    <StackLayout class="p-4">
-        <Label text="Please tap me" class="text-3xl text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="page">
+  <ActionBar title="Mon Frigo" class="action-bar"></ActionBar>
+  
+  <GridLayout rows="auto, *">
+    <StackLayout orientation="horizontal" row="0" class="filter-bar">
+      <Button text="Tout" class="filter-button" />
+      <Button text="Bientôt expiré" class="filter-button" />
+      <Button text="Manquants pour recettes" class="filter-button" />
     </StackLayout>
+    
+    <ListView items="{{ aliments }}" row="1">
+      <ListView.itemTemplate>
+        <GridLayout class="card" columns="auto, *" rows="*" tap="{{ onCardTap }}">
+          <Image src="~/images/food.png" class="card-image" col="0" />
+          <StackLayout class="card-info" col="1">
+            <Label text="{{ nom }}" class="card-title" />
+            <Label text="{{ dateExpiration }}" class="card-subtitle" />
+          </StackLayout>
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    
+    <FAB src="res://add" class="fab-button" tap="{{ onAddTap }}" />
+  </GridLayout>
 </Page>
